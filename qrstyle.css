@@ -1,0 +1,100 @@
+:root{
+    --primary-color:#C835F5;
+    --primary-color-transparent:#c835f58a;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d7d7d770;
+}
+.bg-body-tertiary{
+    background-color: #fff !important;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+main{
+    padding: 24px 10px;
+}
+.card{
+    border: none;
+    padding: 24px;
+    box-shadow: 0 0 5px var(--primary-color-transparent);
+}
+.input-section {
+    text-align: center;
+}
+.input-section label, .output-section p
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+.input-section textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.input-section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+}
+.input-section button:hover{
+    background-color: #fff;
+    color: var(--primary-color);
+    transition: background-color .3s;
+}
+.output-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    main .row{
+        flex-direction: column !important;
+    }
+    .row .col{
+        margin: 10px;
+    }
+    .col textarea{
+        width: 95%;
+    }
+}
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        flex: 1;
+        min-width: 300px; /* Adjust as needed */
+        margin: 10px;
+    }
+   
+    @media  (max-width: 767px)  {
+        .row {
+            flex-direction: column;
+        }
+    }
+
